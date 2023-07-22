@@ -41,3 +41,30 @@ import Foundation
 #else
     public typealias TextStorageEditActions = NSTextStorageEditActions
 #endif
+
+extension UIColor {
+    
+    var redComponent: CGFloat {
+        var r: CGFloat = 0
+        getRed(&r, green: nil, blue: nil, alpha: nil)
+        return r
+    }
+    
+    var greenComponent: CGFloat {
+        var g: CGFloat = 0
+        getRed(nil, green: &g, blue: nil, alpha: nil)
+        return g
+    }
+    
+    var blueComponent: CGFloat {
+        var b: CGFloat = 0
+        getRed(nil, green: nil, blue: &b, alpha: nil)
+        return b
+    }
+    
+    var alphaComponent: CGFloat {
+        var a: CGFloat = 0
+        getRed(nil, green: nil, blue: nil, alpha: &a)
+        return a
+    }
+}
