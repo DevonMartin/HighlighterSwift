@@ -42,6 +42,7 @@ import Foundation
     public typealias TextStorageEditActions = NSTextStorageEditActions
 #endif
 
+#if os(iOS)
 extension UIColor {
     
     var redComponent: CGFloat {
@@ -68,3 +69,4 @@ extension UIColor {
         return a
     }
 }
+#endif
