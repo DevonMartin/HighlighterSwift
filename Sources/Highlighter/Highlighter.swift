@@ -317,6 +317,7 @@ open class Highlighter {
 }
 
 
+#if os(OSX)
 /**
  Swap the paragraph style in all of the attributes of
  an NSMutableAttributedString.
@@ -337,3 +338,4 @@ extension NSMutableAttributedString {
         endEditing()
     }
 }
+#endif
